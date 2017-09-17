@@ -1,0 +1,69 @@
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+#navwrap {
+    position:fixed;
+	height: 100%;
+    background: red;
+    top: 100px;
+    bottom:0;
+    left: 0;
+    width: 140px;
+    margin:auto;
+	margin-left: -100px;
+	transition: 0.5s;
+}
+#nav ul {
+    width: 140px;
+    background: grey;
+    position:absolute;
+    left:-9999em;
+}
+#nav a {
+    display:block;
+    padding:5px;
+    border:1px solid #000;
+    margin:0 0 -1px;
+}
+#navwrap ul li {
+    position:relative;
+}
+#nav li:hover > ul {
+    left:140px;
+    top:0;
+}
+#nav li:hover > a {
+    background:yellow;
+    cursor:pointer;
+}
+.button a {
+    display: block;
+    padding:5px 10px;
+    background: tomato;
+}
+.app-header{
+	background: blue;
+    height: 50px;
+    width: 100%;
+}
+
+.page-container{
+	transition: 0.5s;
+	padding-left: 45px;
+}
+
+.page-para{
+}
+
+.glyphy-mod{
+    float: right;
+    padding-right: 5px;
+}
